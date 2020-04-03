@@ -32,7 +32,7 @@ def get_theo_dominant_sp_list(df):
         theo_dom_sp_dis_patch = {}
         for j in range(4):
             habitat_id = 'h%d'%j
-            dominant_sp = dominant_sp = mode(df.loc[patch_id, habitat_id].values)[0][0]
+            dominant_sp = mode(df.loc[patch_id, habitat_id].values)[0][0]
             theo_dom_sp_dis_patch[habitat_id] = dominant_sp
         theo_dom_sp_dis[patch_id] = theo_dom_sp_dis_patch
     return theo_dom_sp_dis
@@ -104,7 +104,7 @@ all_percent_results_df = pd.DataFrame(all_percent_results, index=['time_step%d'%
 all_percent_results_df.to_csv('all_percent_results.csv')  
 
         
-        
+
         
         
         
